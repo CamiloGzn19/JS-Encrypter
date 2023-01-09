@@ -1,6 +1,11 @@
+let originalText = document.getElementById("originalText").value;
 let finalText;
 
-function trans(txt) {
+function content(val) {
+  originalText = val;
+}
+
+function encrypt(txt) {
   finalText = txt
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
@@ -11,7 +16,7 @@ function trans(txt) {
   return finalText;
 }
 
-function revtrans(txt) {
+function decrypt(txt) {
   finalText = txt
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
@@ -22,4 +27,12 @@ function revtrans(txt) {
   return finalText;
 }
 
-console.log(revtrans(texto));
+function btnEncrypt() {
+  console.log(encrypt(originalText));
+  let replaceText = (document.getElementById("finalText").value = finalText);
+}
+
+function btnDecrypt() {
+  console.log(decrypt(originalText));
+  let replaceText = (document.getElementById("finalText").value = finalText);
+}

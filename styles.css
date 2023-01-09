@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
   --dark-blue-100: #609ed4;
@@ -19,15 +19,26 @@
   --gray-400: #495057;
   --gray-500: #343a40;
 
-  --general-font: 'Inter', sans-serif;
+  --general-font: "Inter", sans-serif;
 }
 
 body {
   background-color: var(--light-blue-100);
+  margin: auto;
+}
+
+h2{
+  font-size: 24px;
+}
+
+p{
+  font-size: 16px;
 }
 
 .gen-container {
   display: flex;
+  height: 80vh;
+  margin-bottom: 40px;
 }
 
 .origin {
@@ -36,12 +47,35 @@ body {
   width: 80%;
 }
 
+.origin > div {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .mainText {
+  height: 450px;
   font-family: var(--general-font);
   background-color: var(--light-blue-100);
   color: var(--dark-blue-300);
   font-size: 32px;
   border: none;
+  margin: 0px 10px 40px 200px;
+}
+
+.destiny {
+  font-family: var(--general-font);
+  background-color: white;
+  color: #343a40;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 32px;
+  margin: 0px 40px 20px 40px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 #logo {
@@ -49,12 +83,13 @@ body {
 }
 
 #btn {
-    cursor: pointer;
+  cursor: pointer;
   font-family: var(--general-font);
   font-weight: 400;
   border-radius: 10px;
   width: 328px;
   height: 67px;
+  border-radius: 24px;
 }
 
 .btn1 {
