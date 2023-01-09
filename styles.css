@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
   --dark-blue-100: #609ed4;
   --dark-blue-200: #356ea9;
@@ -7,13 +9,62 @@
 
   --light-blue-100: #f3f5fc;
   --light-blue-200: #eff1fa;
-  --light-blue-300: #E9ECF8;
-  --light-blue-400: #AAB2D5;
-  --light-blue-500: #757FB2;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
 
   --gray-100: #ced4da;
   --gray-200: #adb5bd;
   --gray-300: #868e96;
   --gray-400: #495057;
   --gray-500: #343a40;
+
+  --general-font: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--light-blue-100);
+}
+
+.gen-container {
+  display: flex;
+}
+
+.origin {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.mainText {
+  font-family: var(--general-font);
+  background-color: var(--light-blue-100);
+  color: var(--dark-blue-300);
+  font-size: 32px;
+  border: none;
+}
+
+#logo {
+  margin: 40px;
+}
+
+#btn {
+    cursor: pointer;
+  font-family: var(--general-font);
+  font-weight: 400;
+  border-radius: 10px;
+  width: 328px;
+  height: 67px;
+}
+
+.btn1 {
+  background-color: var(--dark-blue-300);
+  border: none;
+  color: white;
+}
+
+.btn2 {
+  background-color: #d8dfe8;
+  border: 1px solid var(--dark-blue-300);
+  color: var(--dark-blue-300);
 }
